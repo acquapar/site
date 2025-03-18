@@ -18,28 +18,9 @@ import {
   LanguageSwitchContainer,
 } from "./styles";
 
-interface SocialLinkProps {
-  href: string;
-  src: string;
-}
-
 const Footer = ({ t }: { t: TFunction }) => {
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
-  };
-
-  const SocialLink = ({ href, src }: SocialLinkProps) => {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        key={src}
-        aria-label={src}
-      >
-        <SvgIcon src={src} width="25px" height="25px" />
-      </a>
-    );
   };
 
   return (
