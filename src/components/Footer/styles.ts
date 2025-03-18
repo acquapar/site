@@ -36,11 +36,13 @@ export const Extra = styled("section")`
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const LogoContainer = styled("div")`
   display: flex;
-  position: relative;
+  align-self: center;
 `;
 
 export const Para = styled("div")`
