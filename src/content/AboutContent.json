@@ -1,21 +1,6 @@
 {
-  "title": "Staff",
-  "text": "",
-  "section": [
-    {
-      "title": "Alexandre Lemos",
-      "content": "Vice-President Seafood",
-      "icon": "alexandre.svg"
-    },
-    {
-      "title": "Pedro Lemos",
-      "content": "Sales Representative",
-      "icon": "pedro.svg"
-    },
-    {
-      "title": "Rafael Soldi",
-      "content": "Chief Executive Officer",
-      "icon": "notes.svg"
-    }
-  ]
-}
+    "title": "About us",
+    "text": "Acquapar is a Brazilian company runed by two cousins from a family with deep roots in the fishing industry dating back to the 1960s. Since its founding in 2003, the company has supplied seafood to partners across Asia, America, and Europe. In 2010, it expanded into the logistics sector, using its industry experience to offer a complete, one-stop solution for its customers.",
+    "button": "Get started"
+  }
+  

@@ -11,6 +11,7 @@ export const ContentSection = styled("section")`
 `;
 
 export const Content = styled("p")`
+  white-space: pre-line;
   margin: 1.5rem 0 2rem 0;
 `;
 
@@ -34,6 +35,21 @@ export const ServiceWrapper = styled("div")`
   max-width: 100%;
 `;
 
+export const ImageWrapper = styled("div")`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    border-radius: 2%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+`;
+
+
 export const MinTitle = styled("h6")`
   font-size: 15px;
   line-height: 1rem;
@@ -44,6 +60,7 @@ export const MinTitle = styled("h6")`
 `;
 
 export const MinPara = styled("p")`
+  white-space: pre-line;
   font-size: 13px;
 `;
 

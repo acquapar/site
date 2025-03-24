@@ -1,4 +1,4 @@
-import { Row, Col } from "antd";
+import { Row, Col, Carousel } from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
 
@@ -14,6 +14,7 @@ import {
   MinPara,
   StyledRow,
   ButtonWrapper,
+  ImageWrapper,
 } from "./styles";
 
 const ContentBlock = ({
@@ -22,6 +23,7 @@ const ContentBlock = ({
   content,
   section,
   button,
+  carousel,
   t,
   id,
   direction,
@@ -42,9 +44,31 @@ const ContentBlock = ({
           id={id}
           direction={direction}
         >
+          { carousel ?
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+              <Carousel style={{borderRadius: 100, objectFit: 'contain'}} autoplay autoplaySpeed={4000} infinite>
+                <ImageWrapper>
+                  <img src='/img/carousel/fish1.jpeg' width="80%" height="80%" alt='carousel  '/>
+                </ImageWrapper>
+                <ImageWrapper>
+                  <img src='/img/carousel/shrimp1.jpeg' width="80%" height="80%" alt='carousel  '/>
+                </ImageWrapper>
+                <ImageWrapper>
+                  <img src='/img/carousel/fish2.jpeg' width="80%" height="80%" alt='carousel  '/>
+                </ImageWrapper>
+                <ImageWrapper>
+                  <img src='/img/carousel/shrimp2.jpeg' width="80%" height="80%" alt='carousel  '/>
+                </ImageWrapper>
+                <ImageWrapper>
+                  <img src='/img/carousel/fish3.jpeg' width="80%" height="80%" alt='carousel  '/>
+                </ImageWrapper>
+              </Carousel>
           </Col>
+          :
+          <Col lg={11} md={11} sm={12} xs={24}>
+            <SvgIcon src={icon!} width="100%" height="100%" />
+          </Col>
+          }
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h6>{t(title)}</h6>

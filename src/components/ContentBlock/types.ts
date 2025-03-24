@@ -1,6 +1,7 @@
 import { TFunction } from "react-i18next";
 export interface ContentBlockProps {
-  icon: string;
+  icon?: string;
+  carousel?: boolean;
   title: string;
   content: string;
   section?: {

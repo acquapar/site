@@ -1,9 +1,9 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
+import StaffContent from "../../content/StaffContent.json";
+import SeafoodContent from "../../content/SeafoodContent.json";
+import LogisticsContent from "../../content/LogisticsContent.json";
 import ContactContent from "../../content/ContactContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -24,30 +24,30 @@ const Home = () => {
         id="intro"
       />
       <MiddleBlock
-        title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
-        button={MiddleBlockContent.button}
+        title={AboutContent.title}
+        content={AboutContent.text}
+        button={AboutContent.button}
         id="about"
       />
       <ContentBlock
         direction="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon="product-launch.svg"
-        id="mission"
+        title={SeafoodContent.title}
+        content={SeafoodContent.text}
+        carousel
+        id="seafood"
       />
       <ContentBlock
         direction="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={LogisticsContent.title}
+        content={LogisticsContent.text}
         icon="waving.svg"
-        id="product"
+        id="logistics"
       />
       <ContentBlock
         direction="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
+        title={StaffContent.title}
+        content={StaffContent.text}
+        section={StaffContent.section}
         icon="graphs.svg"
         id="staff"
       />
