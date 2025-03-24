@@ -46,21 +46,21 @@ const ContentBlock = ({
         >
           { carousel ?
           <Col lg={11} md={11} sm={12} xs={24}>
-              <Carousel style={{borderRadius: 100, objectFit: 'contain'}} autoplay autoplaySpeed={4000} infinite>
+              <Carousel autoplay autoplaySpeed={4000} infinite>
                 <ImageWrapper>
-                  <img src='/img/carousel/fish1.jpeg' width="80%" height="80%" alt='carousel  '/>
+                  <img src='/img/carousel/fish1.jpeg' width="100%" height="100%" alt='carousel'/>
                 </ImageWrapper>
                 <ImageWrapper>
-                  <img src='/img/carousel/shrimp1.jpeg' width="80%" height="80%" alt='carousel  '/>
+                  <img src='/img/carousel/shrimp1.jpeg' width="100%" height="100%" alt='carousel'/>
                 </ImageWrapper>
                 <ImageWrapper>
-                  <img src='/img/carousel/fish2.jpeg' width="80%" height="80%" alt='carousel  '/>
+                  <img src='/img/carousel/fish2.jpeg' width="100%" height="100%" alt='carousel'/>
                 </ImageWrapper>
                 <ImageWrapper>
-                  <img src='/img/carousel/shrimp2.jpeg' width="80%" height="80%" alt='carousel  '/>
+                  <img src='/img/carousel/shrimp2.jpeg' width="100%" height="100%" alt='carousel'/>
                 </ImageWrapper>
                 <ImageWrapper>
-                  <img src='/img/carousel/fish3.jpeg' width="80%" height="80%" alt='carousel  '/>
+                  <img src='/img/carousel/fish3.jpeg' width="100%" height="100%" alt='carousel'/>
                 </ImageWrapper>
               </Carousel>
           </Col>

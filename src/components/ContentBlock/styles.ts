@@ -42,7 +42,7 @@ export const ImageWrapper = styled("div")`
   align-items: center;
 
   img {
-    border-radius: 2%;
+    border-radius: 1%;
     max-width: 100%;
     height: auto;
     object-fit: contain;
