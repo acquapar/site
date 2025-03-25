@@ -30,7 +30,6 @@ const StaffBlock = ({ title, content, id }: StaffBlockProps) => {
                             <SvgIcon src={staff.image} width="180px" height="180px" />
                             <MinTitle>{staff.name}</MinTitle>
                             <MinPara>{staff.position}</MinPara>
-                            <MinPara>{staff.email}</MinPara>
                           </Col>
                         ))}
                       </Row>
