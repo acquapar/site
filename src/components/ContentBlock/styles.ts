@@ -64,6 +64,11 @@ export const MinPara = styled("p")`
   font-size: 13px;
 `;
 
+export const MinSubtitle = styled("a")`
+  white-space: pre-line;
+  font-size: 13px;
+`;
+
 export const ButtonWrapper = styled("div")`
   display: flex;
   justify-content: space-between;

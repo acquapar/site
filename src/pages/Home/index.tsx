@@ -1,10 +1,11 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import AboutContent from "../../content/AboutContent.json";
-import StaffContent from "../../content/StaffContent.json";
 import SeafoodContent from "../../content/SeafoodContent.json";
 import LogisticsContent from "../../content/LogisticsContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import StaffBlock from "../../components/StaffBlock";
+import { Staff } from "../../components/StaffBlock/types";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -43,14 +44,13 @@ const Home = () => {
         icon="waving.svg"
         id="logistics"
       />
-      <ContentBlock
-        direction="left"
-        title={StaffContent.title}
-        content={StaffContent.text}
-        section={StaffContent.section}
-        icon="graphs.svg"
+
+      <StaffBlock 
+        title="Staff"
+        content={Staff}
         id="staff"
       />
+
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
