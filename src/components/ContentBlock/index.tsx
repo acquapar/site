@@ -48,19 +48,19 @@ const ContentBlock = ({
           <Col lg={11} md={11} sm={12} xs={24}>
               <Carousel autoplay autoplaySpeed={4000} infinite>
                 <ImageWrapper>
-                  <img src='/img/carousel/fish1.jpeg' width="100%" height="100%" alt='carousel'/>
+                  <img src='/img/carousel/fish1.jpeg' alt='carousel'/>
                 </ImageWrapper>
                 <ImageWrapper>
-                  <img src='/img/carousel/shrimp1.jpeg' width="100%" height="100%" alt='carousel'/>
+                  <img src='/img/carousel/shrimp1.jpeg' alt='carousel'/>
                 </ImageWrapper>
                 <ImageWrapper>
-                  <img src='/img/carousel/fish2.jpeg' width="100%" height="100%" alt='carousel'/>
+                  <img src='/img/carousel/fish2.jpeg' alt='carousel'/>
                 </ImageWrapper>
                 <ImageWrapper>
-                  <img src='/img/carousel/shrimp2.jpeg' width="100%" height="100%" alt='carousel'/>
+                  <img src='/img/carousel/shrimp2.jpeg' alt='carousel'/>
                 </ImageWrapper>
                 <ImageWrapper>
-                  <img src='/img/carousel/fish3.jpeg' width="100%" height="100%" alt='carousel'/>
+                  <img src='/img/carousel/fish3.jpeg' alt='carousel'/>
                 </ImageWrapper>
               </Carousel>
           </Col>

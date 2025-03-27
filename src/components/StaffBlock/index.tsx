@@ -27,7 +27,7 @@ const StaffBlock = ({ title, content, id }: StaffBlockProps) => {
                       <Row justify="center" gutter={[24, 24]}>
                         {content.map((staff) => (
                           <Col key={staff.id} xs={24} sm={12} md={8} lg={8} xl={6}>
-                            <SvgIcon src={staff.image} width="180px" height="180px" />
+                            <SvgIcon src={staff.image} width="200px" height="200px" />
                             <MinTitle>{staff.name}</MinTitle>
                             <MinPara>{staff.position}</MinPara>
                           </Col>

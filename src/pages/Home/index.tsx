@@ -41,7 +41,7 @@ const Home = () => {
         direction="left"
         title={LogisticsContent.title}
         content={LogisticsContent.text}
-        icon="waving.svg"
+        icon="logistics.png"
         id="logistics"
       />
 

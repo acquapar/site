@@ -12,6 +12,7 @@ export const ContentSection = styled("section")`
 
 export const Content = styled("p")`
   white-space: pre-line;
+  text-align: justify;
   margin: 1.5rem 0 2rem 0;
 `;
 
@@ -40,7 +41,7 @@ export const ImageWrapper = styled("div")`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   img {
     border-radius: 1%;
     max-width: 100%;
