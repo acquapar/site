@@ -12,7 +12,7 @@ export const ContentSection = styled("section")`
 
 export const Content = styled("p")`
   white-space: pre-line;
-  text-align: justify;
+  text-align: left;
   margin: 1.5rem 0 2rem 0;
 `;
 

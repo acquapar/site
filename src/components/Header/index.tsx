@@ -14,7 +14,9 @@ import {
   Label,
   Outline,
   Span,
+  LanguageSwitch,
 } from "./styles";
+import i18n from "../../translation";
 
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
@@ -24,6 +26,14 @@ const Header = ({ t }: { t: TFunction }) => {
   };
 
   const MenuItem = () => {
+    const currentLang = i18n.language;
+
+    const toggleLanguage = () => {
+      const newLang = currentLang === "en" ? "br" : "en";
+      i18n.changeLanguage(newLang);
+    };
+  
+    const languageIcon = currentLang === "en" ? "united-states.svg" : "brasil.svg";
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
       element.scrollIntoView({
@@ -53,10 +63,17 @@ const Header = ({ t }: { t: TFunction }) => {
             <Button>{t("Contact")}</Button>
           </Span>
         </CustomNavLinkSmall>
+        <CustomNavLinkSmall>
+          <LanguageSwitch
+            onClick={toggleLanguage}
+            title={`Switch to ${currentLang === "en" ? "Português" : "English"}`}
+          >
+            <SvgIcon src={languageIcon} width="30px" height="30px" />
+          </LanguageSwitch>
+        </CustomNavLinkSmall>
       </>
     );
   };
-
   return (
     <HeaderSection>
       <Container>
@@ -67,6 +84,7 @@ const Header = ({ t }: { t: TFunction }) => {
           <NotHidden>
             <MenuItem />
           </NotHidden>
+
           <Burger onClick={toggleButton}>
             <Outline />
           </Burger>

@@ -61,7 +61,7 @@ export const CustomNavLinkSmall = styled(NavLink)`
   font-size: 1.2rem;
   color: #18216d;
   transition: color 0.2s ease-in;
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 1.2rem;
 
   @media only screen and (max-width: 768px) {
     margin: 1.25rem 2rem;
@@ -91,5 +91,18 @@ export const Span = styled("span")`
     color: #3f97c7;
     text-underline-position: under;
     text-decoration: #3f97c7 wavy underline;
+  }
+`;
+
+export const LanguageSwitch = styled("div")`
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
   }
 `;
